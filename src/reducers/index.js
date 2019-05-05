@@ -71,7 +71,9 @@ const UpdateBookList = (state, action) => {
 
         case 'FETCH_BOOKS_REQUEST':
             return {
-                ...state
+                books: [],
+                loading: true,
+                error: null
             };
 
         case 'FETCH_BOOKS_FAILURE':
